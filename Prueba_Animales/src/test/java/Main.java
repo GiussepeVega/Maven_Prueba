@@ -41,6 +41,7 @@ public class Main {
 
             try {
             	// agregamos la nueva clase segun lo insertado si todo esta conforme
+            	// llamar a la funcion factory y lo invocamos aca
                 Animal animal = factory.nuevo(partes[0], partes[1], partes[2]);
 
                 // llamamos al metodo tipoAnimal y comprobamos que tipo es para que añada a la lista segun su especie
