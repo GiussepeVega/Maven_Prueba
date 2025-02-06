@@ -6,19 +6,19 @@
   
   <properties>
         <java.version>11</java.version>
-        <spring.version>5.3.30</spring.version> <!-- Usa una versión estable de Spring -->
-        <junit.version>5.9.2</junit.version> <!-- Última versión de JUnit 5 -->
+        <spring.version>5.3.30</spring.version>
+        <junit.version>5.9.2</junit.version> 
     </properties>
 
     <dependencies>
-        <!-- Spring Core (para usar beans y el contenedor) -->
+		<!-- importar spring framework al proyecto -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
 
-        <!-- JUnit 5 (Para pruebas unitarias y TDD) -->
+        <!-- importar JUnit para pruebas unitarias -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -32,7 +32,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Mockito (Para pruebas con mocks si lo necesitas) -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
@@ -54,7 +53,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Plugin para ejecutar pruebas con JUnit -->
+            <!-- plugin para ejecutar pruebas con JUnit -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
